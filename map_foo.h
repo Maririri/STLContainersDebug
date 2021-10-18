@@ -5,6 +5,6 @@
 #ifndef STLCONTAINERSDEBUG2_MAP_FOO_H
 #define STLCONTAINERSDEBUG2_MAP_FOO_H
 
-void map_foo();
+void map_foo(int count);
 
 #endif //STLCONTAINERSDEBUG2_MAP_FOO_H

@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void map_foo() {
+void map_foo(int count) {
     map<string, pair<string, string>> mStr;
     {
         mStr.insert(mStr.end(),
@@ -55,7 +55,7 @@ void map_foo() {
 
     std::unordered_map<std::string, std::string> umStr({{"q", "r"},
                                                         {"s", "t"}});
-    for (int i = 0; i < SMALL_CONTAINER_SIZE; ++i) {
+    for (int i = 0; i < count; ++i) {
         umStr.insert({"o", "o"});
     }
 }

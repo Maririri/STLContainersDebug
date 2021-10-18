@@ -29,7 +29,8 @@ using namespace std;
 typedef std::unordered_map<std::string, std::string> stringmap;
 
 enum {
-    BIG_CONTAINER_SIZE = 80000, SMALL_CONTAINER_SIZE = 8
+    SMALL_SIZE = 8,
+    BIG_SIZE = 80000
 };
 
 struct simple {
@@ -45,7 +46,7 @@ struct S {
     }
 
     void Init() {
-        for (int i = 0; i < SMALL_CONTAINER_SIZE; ++i) {
+        for (int i = 0; i < SMALL_SIZE; ++i) {
             for (int j = 0; j < 2; ++j) {
                 map<int, simple> m;
                 m.insert(make_pair(i + j, simple(i, "May")));
@@ -59,10 +60,10 @@ struct S {
 
 int main() {
     vector_foo();
-    queue_foo(SMALL_CONTAINER_SIZE);
-    list_set_foo(SMALL_CONTAINER_SIZE);
+    queue_foo(SMALL_SIZE);
+    list_set_foo(SMALL_SIZE);
     multiset_foo();
-    map_foo();
+    map_foo(SMALL_SIZE);
     multimap_foo();
     stack_foo();
     unique_ptr_foo();
