@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <memory>
 #include "unique_ptr.h"
 
 Foo::Foo() { std::cout << "Foo::Foo\n"; }

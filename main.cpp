@@ -3,6 +3,7 @@
 #include <unordered_map>
 #include <vector>
 #include <type_traits>
+#include <string>
 
 #include "multimap.h"
 #include "multiset.h"
