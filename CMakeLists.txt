@@ -11,11 +11,13 @@ set(SOURCE_FILES
         multimap.cpp
         stack.cpp
         queue.cpp
-        unique_ptr.cpp
-        map_foo.cpp
-        list_set_foo.cpp
-        vector_foo.cpp
-        array_foo.cpp
+        smart_ptr.cpp
+        map.cpp
+        list_set.cpp
+        vector.cpp
+        array.cpp
+        others.cpp
+        tuple.cpp
 )
 
 add_executable(STLContainersDebug ${SOURCE_FILES})

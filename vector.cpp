@@ -4,7 +4,7 @@
 
 #include <vector>
 #include <string>
-#include "vector_foo.h"
+#include "vector.h"
 
 using namespace std;
 

@@ -5,14 +5,20 @@
 #ifndef STLCONTAINERSDEBUG2_UNIQUE_PTR_H
 #define STLCONTAINERSDEBUG2_UNIQUE_PTR_H
 
-struct Foo {
-    Foo();
+struct Base {
+    Base();
 
-    ~Foo();
+    ~Base();
 
     void bar();
 };
 
-void unique_ptr_foo();
+struct Derived : public Base {
+    Derived();
+
+    ~Derived();
+};
+
+void smart_ptr_foo();
 
 #endif //STLCONTAINERSDEBUG2_UNIQUE_PTR_H

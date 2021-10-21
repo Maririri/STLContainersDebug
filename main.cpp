@@ -9,11 +9,13 @@
 #include "multiset.h"
 #include "queue.h"
 #include "stack.h"
-#include "unique_ptr.h"
-#include "map_foo.h"
-#include "vector_foo.h"
-#include "list_set_foo.h"
-#include "array_foo.h"
+#include "smart_ptr.h"
+#include "map.h"
+#include "vector.h"
+#include "list_set.h"
+#include "array.h"
+#include "tuple.h"
+#include "others.h"
 
 template<class T>
 void swap(T &a, T &b) {
@@ -67,8 +69,10 @@ int main() {
     map_foo(SMALL_SIZE);
     multimap_foo();
     stack_foo();
-    unique_ptr_foo();
+    smart_ptr_foo();
     array_foo();
+    tuple_foo();
+    others_foo();
 
     return 0;
 }

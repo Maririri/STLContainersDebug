@@ -5,10 +5,10 @@
 #include "stack.h"
 #include <iostream>
 #include <stack>
+
 using namespace std;
 
-int stack_foo()
-{
+int stack_foo() {
     // Empty stack
     stack<int> mystack;
     mystack.push(0);

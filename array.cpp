@@ -5,7 +5,7 @@
 #include <array>
 #include <valarray>
 #include <string>
-#include "array_foo.h"
+#include "array.h"
 
 using namespace std;
 
