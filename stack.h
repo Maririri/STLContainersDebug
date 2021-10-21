@@ -5,6 +5,6 @@
 #ifndef STLCONTAINERSDEBUG2_STACK_H
 #define STLCONTAINERSDEBUG2_STACK_H
 
-int stack_foo();
+void stack_foo();
 
 #endif //STLCONTAINERSDEBUG2_STACK_H

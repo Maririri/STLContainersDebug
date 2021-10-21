@@ -17,6 +17,7 @@
 #include "tuple.h"
 #include "others.h"
 
+/*
 template<class T>
 void swap(T &a, T &b) {
     static_assert(std::is_copy_constructible<T>::value, "Swap requires copying");
@@ -27,6 +28,7 @@ void swap(T &a, T &b) {
     b = a;
     a = c;
 }
+*/
 
 using namespace std;
 typedef std::unordered_map<std::string, std::string> stringmap;

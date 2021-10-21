@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int stack_foo() {
+void stack_foo() {
     // Empty stack
     stack<int> mystack;
     mystack.push(0);
