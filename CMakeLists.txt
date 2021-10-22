@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libstdc++")
 #set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -gdwarf-4")
 
+find_package(Threads REQUIRED)
+
 set(SOURCE_FILES
         main.cpp
         multiset.cpp
@@ -21,3 +23,4 @@ set(SOURCE_FILES
 )
 
 add_executable(STLContainersDebug ${SOURCE_FILES})
+target_link_libraries(STLContainersDebug PRIVATE Threads::Threads)
