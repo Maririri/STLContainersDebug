@@ -6,12 +6,21 @@
 #include <queue>
 #include <string>
 
+template<typename T, typename U>
+void foo(std::queue<std::string> q){
+    for (int i = 0; i < 8; ++i) {
+        q.pop();
+    }
+}
+
 void queue_foo(const int count) {
 
     std::queue<std::string> qStr;
     for (int i = 0; i < count; ++i) {
         qStr.push("c");
     }
+
+    foo<std::queue<std::string>, std::deque<std::string>>(qStr);
 
     for (int i = 0; i < count; ++i) {
         qStr.pop();
